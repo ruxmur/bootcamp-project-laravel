@@ -16,12 +16,12 @@ class CreateTrainigTable extends Migration
     {
         Schema::create('trainig', function (Blueprint $table) {
             $table->foreignId('clients_id')
-            ->nullable()
+            ->notnull()
             ->constrained()
             ->cascadeOnUpdate()
             ->cascadeOnDelete();
             $table->foreignId('workout_types_id')
-            ->nullable()
+            ->notnull()
             ->constrained()
             ->cascadeOnUpdate()
             ->cascadeOnDelete();
