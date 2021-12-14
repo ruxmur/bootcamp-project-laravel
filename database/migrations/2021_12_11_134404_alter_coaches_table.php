@@ -14,13 +14,10 @@ class AlterCoachesTable extends Migration
      */
     public function up()
     {
-    Schema::table('coaches', function (Blueprint $table) {
-        $table->string('address', 225)->change();
-        
-    });
-    Schema::table('coaches', function (Blueprint $table) {
-        $table->dropColumn('hobby');
-    });
+        Schema::table('coaches', function (Blueprint $table) {
+            $table->string('address', 225)->change();
+            $table->dropColumn('hobby');
+        });
     }
 
     /**
@@ -30,6 +27,8 @@ class AlterCoachesTable extends Migration
      */
     public function down()
     {
-    Schema::dropIfExists('coaches');
+        Schema::table('coaches', function ($table) {
+            $table->dropColumn('hobby');
+        });
     }
 }

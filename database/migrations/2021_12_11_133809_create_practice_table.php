@@ -15,16 +15,16 @@ class CreatePracticeTable extends Migration
     public function up()
     {
         Schema::create('practice', function (Blueprint $table) {
-            $table->foreignId('coaches_id')
-            ->notnull()
-            ->constrained()
-            ->cascadeOnUpdate()
-            ->cascadeOnDelete();
-            $table->foreignId('workout_types_id')
-            ->notnull()
-            ->constrained()
-            ->cascadeOnUpdate()
-            ->cascadeOnDelete();
+            $table->foreignId('coach_id')
+                  ->notnull()
+                  ->constrained()
+                  ->cascadeOnUpdate()
+                  ->cascadeOnDelete();
+            $table->foreignId('workout_type_id')
+                  ->notnull()
+                  ->constrained()
+                  ->cascadeOnUpdate()
+                  ->cascadeOnDelete();
         });
     }
 
