@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class client extends Model
+class Client extends Model
 {
     use HasFactory;
 
@@ -23,9 +23,9 @@ class client extends Model
         return $this->hasMany('membership');
     }
 
-    public function about_client()
+    public function aboutClient()
     {
-        return $this->hasOne('about_client');
+        return $this->hasOne('aboutClient');
     }
 
     public function reservation()

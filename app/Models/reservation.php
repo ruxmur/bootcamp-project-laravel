@@ -25,7 +25,7 @@ class reservation extends Model
 
     public function workout_type()
     {
-        return $this->hasMany('workout_type');
+        return $this->hasMany('workoutType');
     }
 
     public function coach()
