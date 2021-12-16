@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class membership extends Model
+class Membership extends Model
 {
     use HasFactory;
 
@@ -18,9 +18,9 @@ class membership extends Model
         'price_lei'
     ];
 
-    public function client()
+    public function clients()
     {
-        return $this->belongsTo('client');
+        return $this->hasMany('client');
     }
 
 }

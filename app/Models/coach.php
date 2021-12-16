@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class coach extends Model
+class Coach extends Model
 {
     use HasFactory;
     
@@ -20,13 +20,13 @@ class coach extends Model
         'hobby'
     ];
 
-    public function reservation()
+    public function reservations()
     {
         return $this->hasMany('reservation');
     }
 
-    public function practice()
+    public function workout_types()
     {
-        return $this->hasMany('practice');
+        return $this->belongsToMany('workout_types');
     }
 }

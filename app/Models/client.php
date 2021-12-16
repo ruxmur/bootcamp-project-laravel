@@ -18,9 +18,9 @@ class Client extends Model
         'end_time'
     ];
 
-    public function membership()
+    public function memberships()
     {
-        return $this->hasMany('membership');
+        return $this->belongsToMany('membership');
     }
 
     public function aboutClient()
@@ -28,13 +28,13 @@ class Client extends Model
         return $this->hasOne('aboutClient');
     }
 
-    public function reservation()
+    public function reservations()
     {
         return $this->hasMany('reservation');
     }
 
-    public function training()
+    public function workout_type()
     {
-        return $this->hasMany('training');
+        return $this->belongsToMany('workout_type');
     }
 }
