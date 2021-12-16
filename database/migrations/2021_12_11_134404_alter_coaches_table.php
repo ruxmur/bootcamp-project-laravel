@@ -12,11 +12,10 @@ class AlterCoachesTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
         Schema::table('coaches', function (Blueprint $table) {
             $table->string('address', 225)->change();
-            $table->dropColumn('hobby');
         });
     }
 
@@ -25,9 +24,9 @@ class AlterCoachesTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down() 
     {
-        Schema::table('coaches', function ($table) {
+        Schema::table('coaches', function (Blueprint $table) {
             $table->dropColumn('hobby');
         });
     }

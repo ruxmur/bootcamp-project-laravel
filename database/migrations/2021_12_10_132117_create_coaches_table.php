@@ -12,7 +12,7 @@ class CreateCoachesTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
         Schema::create('coaches', function (Blueprint $table) {
             $table->id();
@@ -21,8 +21,8 @@ class CreateCoachesTable extends Migration
             $table->string('email', 255)->unique();
             $table->string('phone_number', 50);
             $table->string('address', 25);
-            $table->string('birthday');
-            $table->string('hobby');
+            $table->date('birthday');
+            $table->string('hobby', 255);
         });
     }
 
@@ -31,7 +31,7 @@ class CreateCoachesTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down() 
     {
         Schema::dropIfExists('coaches');
     }

@@ -12,13 +12,13 @@ class WorkoutTypes extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
         DB::statement("CREATE TABLE workout_types(
-                      `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
-                      `name` VARCHAR (50) NOT NULL,
-                       PRIMARY KEY (`id`) );
-                    ");
+            `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+            `name` VARCHAR (50) UNIQUE NOT NULL,
+            PRIMARY KEY (`id`) );
+            ");
     }
 
     /**
@@ -26,7 +26,7 @@ class WorkoutTypes extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down() 
     {
         DB::statement("DROP TABLE `workout_types`");
     }
