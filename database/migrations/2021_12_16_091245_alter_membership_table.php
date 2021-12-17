@@ -15,8 +15,8 @@ class AlterMembershipTable extends Migration
     public function up()
     {
         Schema::table('membership', function (Blueprint $table) {
-            $table->string('course', 50)->float();
-        });   
+            $table->decimal('course', 8, 2);
+        });
     }
 
     /**
