@@ -12,19 +12,20 @@ class Clients extends Migration
      *
      * @return void
      */
-    public function up() 
+    public function up()
     {
-        DB::statement("CREATE TABLE `clients` (
-            `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
-            `membership_id` BIGINT UNSIGNED NULL,
-            `first_name` VARCHAR (20) NOT NULL,
-            `last_name` VARCHAR (20) NOT NULL,
-            `start_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
-            `end_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
-            PRIMARY KEY (`id`),
-            FOREIGN KEY(`membership_id`) REFERENCES `membership`(`id`)
-            ON UPDATE CASCADE); 
-            ");
+        DB::statement("
+            CREATE TABLE `clients` (
+              `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+              `membership_id` BIGINT UNSIGNED NULL,
+              `first_name` VARCHAR (20) NOT NULL,
+              `last_name` VARCHAR (20) NOT NULL,
+              `start_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+              `end_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+               PRIMARY KEY (`id`),
+               FOREIGN KEY(`membership_id`) REFERENCES `membership`(`id`)
+               ON UPDATE CASCADE); 
+           ");
     }
 
     /**
@@ -32,8 +33,10 @@ class Clients extends Migration
      *
      * @return void
      */
-    public function down() 
+    public function down()
     {
-        DB::statement("DROP TABLE `clients`");
+        DB::statement("
+          DROP TABLE `clients`
+        ");
     }
 }

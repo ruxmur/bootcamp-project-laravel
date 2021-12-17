@@ -14,10 +14,11 @@ class WorkoutTypes extends Migration
      */
     public function up() 
     {
-        DB::statement("CREATE TABLE workout_types(
-            `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
-            `name` VARCHAR (50) UNIQUE NOT NULL,
-            PRIMARY KEY (`id`) );
+        DB::statement("
+            CREATE TABLE workout_types(
+               `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+               `name` VARCHAR (50) UNIQUE NOT NULL,
+                PRIMARY KEY (`id`) );
             ");
     }
 
@@ -28,6 +29,8 @@ class WorkoutTypes extends Migration
      */
     public function down() 
     {
-        DB::statement("DROP TABLE `workout_types`");
+        DB::statement("
+           DROP TABLE `workout_types`
+        ");
     }
 }

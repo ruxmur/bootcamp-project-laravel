@@ -14,7 +14,7 @@ class AlterMembershipTable extends Migration
      */
     public function up()
     {
-        Schema::create('membership', function (Blueprint $table) {
+        Schema::table('membership', function (Blueprint $table) {
             $table->string('course', 50)->float();
         });   
     }
@@ -26,6 +26,8 @@ class AlterMembershipTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('membership', function (Blueprint $table){
+            $table->dropColumn('course');
+         });
     }
 }
