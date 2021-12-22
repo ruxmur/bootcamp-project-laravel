@@ -27,6 +27,6 @@ class Coach extends Model
 
     public function WorkoutTypes()
     {
-        return $this->belongsToMany(WorkoutType::class, 'coach_workoutType',  'coach_id', 'workoutType_id');
+        return $this->belongsToMany(WorkoutType::class, 'practice',  'coach_id', 'workout_type_id');
     }
 }

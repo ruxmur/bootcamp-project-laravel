@@ -20,16 +20,16 @@ class Reservation extends Model
 
     public function Clients()
     {
-        return $this->belongsToMany(Client::class, 'client_reservation',  'client_id', 'reservation_id');
+        return $this->belongsToMany(Client::class, 'client_id');
     }
 
     public function WorkoutTypes()
     {
-        return $this->belongsToMany(WorkoutType::class, 'reservation_workoutType',  'reservation_id', 'workoutType_id');
+        return $this->belongsToMany(WorkoutType::class, 'workout_type_id');
     }
 
     public function Coaches()
     {
-        return $this->belongsToMany(Coache::class, 'coach_reservation',  'coach_id', 'reservation_id');
+        return $this->belongsToMany(Coache::class, 'coach_id');
     }
 }

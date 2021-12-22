@@ -21,11 +21,11 @@ class WorkoutType extends Model
 
     public function Coaches()
     {
-        return $this->belongsToMany(Coache::class, 'coach_workoutType',  'coach_id', 'workoutType_id');
+        return $this->belongsToMany(Coache::class, 'practice',  'coach_id', 'workout_type_id');
     }
 
     public function Clients()
     {
-        return $this->belongsToMany(Client::class, 'client_coach');
+        return $this->belongsToMany(Client::class);
     }
 }

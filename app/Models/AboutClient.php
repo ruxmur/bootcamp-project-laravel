@@ -21,6 +21,6 @@ class AboutClient extends Model
 
     public function Client()
     {
-        return $this->belongsTo(Client::class);
+        return $this->belongsTo(Client::class, 'client_id');
     }
 }

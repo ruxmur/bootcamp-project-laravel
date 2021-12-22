@@ -20,7 +20,7 @@ class Client extends Model
 
     public function Memberships()
     {
-        return $this->belongsToMany(Membership::class, 'client_membership');
+        return $this->belongsToMany(Membership::class, 'membership_id');
     }
 
     public function AboutClient()
@@ -35,6 +35,6 @@ class Client extends Model
 
     public function WorkoutType()
     {
-        return $this->belongsToMany(WorkoutType::class, 'client_workoutType', 'client_id', 'workoutType_id');
+        return $this->belongsToMany(WorkoutType::class, 'training', 'client_id', 'workout_type_id');
     }
 }
