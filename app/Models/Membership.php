@@ -20,7 +20,7 @@ class Membership extends Model
 
     public function clients()
     {
-        return $this->hasMany('client');
+        return $this->hasMany(Client::class);
     }
 
 }

@@ -20,13 +20,13 @@ class Coach extends Model
         'hobby'
     ];
 
-    public function reservations()
+    public function Reservations()
     {
-        return $this->hasMany('reservation');
+        return $this->hasMany(Reservation::class);
     }
 
-    public function workout_types()
+    public function WorkoutTypes()
     {
-        return $this->belongsToMany('workout_types');
+        return $this->belongsToMany(WorkoutType::class, 'coach_workoutType',  'coach_id', 'workoutType_id');
     }
 }
