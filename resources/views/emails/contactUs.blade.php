@@ -12,7 +12,8 @@
   <p>User membership: {{ $membership }}</p>
   <p>User sport: {{ $sport }}</p>
   <p>User coach: {{ $coach }}</p>
-  <p>User messege: {{ $messageText }}</p>
+  <p>User messege:</p>
+  <p>{{ $messageText }}</p>
 
 </body>
 </html>
