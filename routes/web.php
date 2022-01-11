@@ -25,11 +25,12 @@ use App\Http\Controllers\ArticleController;
 
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
-Route::get('/services-planes',[ServicesPlanesController::class, 'services'])->name('services');
+Route::get('/services',[ServicesPlanesController::class, 'services'])->name('services');
 Route::get('/booking',[BookingController::class, 'booking'])->name('booking');
 Route::get('/team',[TeamController::class, 'team'])->name('team');
 Route::get('/about',[AboutController::class, 'about'])->name('about');
-Route::get('/contact',[ContactUsController::class, 'contact'])->name('contact');
+Route::get('/contacts',[ContactUsController::class, 'contact'])->name('contactUs');
+Route::post('/contactUs',[ContactUsController::class, 'send'])->name('contactUs.send');
 Route::get('/blog',[BlogController::class, 'blog'])->name('blog');
 
 

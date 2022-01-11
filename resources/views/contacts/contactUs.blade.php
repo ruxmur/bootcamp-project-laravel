@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<section class="contact bg_grey">
+<section class="contact bg_grey" >
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 banner_img text-white">
@@ -27,16 +27,32 @@
           <h5 class="know_more text-center">
             Know More About Our History
           </h5>
-          <form>
+          @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            @if (session()->has('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+          <form action="{{ route('contactUs.send') }}" method="POST" name="contact-form" >
+            {{ csrf_field() }}   
+            <!-- @csrf -->
             <div class="form-row">
               <div class="form-group col-md-12">
-                <input type="text" class="form-control form-control-lg mt-3 mb-2" placeholder="Name" />
+                <input name="name" type="text" value="{{ old('name') }}" class="form-control form-control-lg mt-3 mb-2" placeholder="Name" />
               </div>
               <div class="form-group col-md-12">
-                <input type="text" class="form-control form-control-lg mb-2" placeholder="E-mail Address" />
+                <input name="email" type="email" value="{{ old('email') }}" class="form-control form-control-lg mb-2" placeholder="E-mail Address" />
               </div>
               <div class="form-group col-sm-12">
-                <textarea class="form-control form-control-lg mb-2" placeholder="Message" rows="6"></textarea>
+                <textarea name="message" class="form-control form-control-lg mb-2" placeholder="Message" rows="6"></textarea>
               </div>
               <div class="form-group col-md-12">
                 <input type="submit" class="btn btn-primary btn-block mb-3" value="Send Message" />
@@ -86,3 +102,5 @@
     </div>
   </div>
 @endsection
+
+
