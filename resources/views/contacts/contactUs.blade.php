@@ -106,7 +106,7 @@
         </div>
       </div>
 
-      
+
       <div class="mb-3">
         <label for="telNo">Telephone / Mobile</label>
         <input name="telNo" type="tel" value="{{ old('telNo') }}" class="form-control" id="tel" placeholder="+(1) 000 000 000">
@@ -117,10 +117,10 @@
           <label for="sex">Sex</label>
           <select class="custom-select d-block w-100" id="sex" required>
             <option value="">Choose...</option>
-            <option>Female</option>
-            <option>Male</option>
+            <option @if(old('sex')==='female' ) selected @endif value="female">Female</option>
+            <option @if(old('sex')==='male' ) selected @endif value="male">Male</option>
           </select>
-          </div>
+        </div>
       </div>
 
       <div>
@@ -128,9 +128,9 @@
           <label for="membership">Membership</label>
           <select class="custom-select d-block w-100" id="membership" required>
             <option value="">Choose...</option>
-            <option>Trial - 1 month</option>
-            <option>Standart - 12 month</option>
-            <option>Premium - 36 month</option>
+            <option @if(old('membership')==='trial' ) selected @endif value="trial">Trial - 1 month</option>
+            <option @if(old('membership')==='standart' ) selected @endif value="standart">Standart - 12 month</option>
+            <option @if(old('membership')==='premium' ) selected @endif value="premium">Premium - 36 month</option>
           </select>
           <div class="invalid-feedback">
             Please select a valid type of membership.
@@ -143,13 +143,13 @@
           <label for="sport">Sport</label>
           <select class="custom-select d-block w-100" id="sport" required>
             <option value="">Choose...</option>
-            <option>Aerobic exercise</option>
-            <option>Box</option>
-            <option>Cardio</option>
-            <option>CrossFit</option>
-            <option>Stretching</option>
-            <option>Strenght training</option>
-            <option>Yoga</option>
+            <option @if(old('sport')==='aerobicExercise' ) selected @endif value="aerobicExercise">Aerobic exercise</option>
+            <option @if(old('sport')==='box' ) selected @endif value="box">Box</option>
+            <option @if(old('sport')==='cardio' ) selected @endif value="cardio">Cardio</option>
+            <option @if(old('sport')==='crossFit' ) selected @endif value="crossFit">CrossFit</option>
+            <option @if(old('sport')==='stretching' ) selected @endif value="stretching">Stretching</option>
+            <option @if(old('sport')==='strenghtTraining' ) selected @endif value="strenghtTraining">Strenght training</option>
+            <option @if(old('sport')==='yoga' ) selected @endif value="yoga">Yoga</option>
           </select>
           <div class="invalid-feedback">
             Please provide a valid type of sport.
@@ -159,13 +159,13 @@
           <label for="coach">Coach</label>
           <select class="custom-select d-block w-100" id="coach" required>
             <option value="">Choose...</option>
-            <option>Alex</option>
-            <option>Kevin</option>
-            <option>Lana</option>
-            <option>Mark</option>
-            <option>Rockwell</option>
-            <option>Ruth</option>
-            <option>Tom</option>
+            <option @if(old('coach')==='alex' ) selected @endif value="alex">Alex</option>
+            <option @if(old('coach')==='kevin' ) selected @endif value="kevin">Kevin</option>
+            <option @if(old('coach')==='lana' ) selected @endif value="lana">Lana</option>
+            <option @if(old('coach')==='mark' ) selected @endif value="mark">Mark</option>
+            <option @if(old('coach')==='rockwell' ) selected @endif value="rockwell">Rockwell</option>
+            <option @if(old('coach')==='ruth' ) selected @endif value="ruth">Ruth</option>
+            <option @if(old('coach')==='tom' ) selected @endif value="tom">Tom</option>
           </select>
           <div class="invalid-feedback">
             Please provide a valid coach.
@@ -173,10 +173,10 @@
         </div>
       </div>
       <div class="form-group col-sm-13">
-        <textarea name="message" class="form-control form-control-lg mb-2" placeholder="Message" rows="6"></textarea>
+        <textarea name="message" class="form-control form-control-lg mb-2" placeholder="Message" rows="6">{{ old('message') }}</textarea>
       </div>
-      <hr class="mb-4">
 
+      <hr class="mb-4">
       <div class="custom-control custom-checkbox">
         <input type="checkbox" class="custom-control-input" id="save-info">
         <label class="custom-control-label" for="save-info">Save this information for next time</label>
@@ -233,8 +233,14 @@
         </div>
       </div>
       <hr class="mb-4">
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" @if(old('readTerms')) checked @endif name="readTerms" type="checkbox" id="gridCheck" value="1">
+          <label class="form-check-label" for="gridCheck">Confirm</label>
+        </div>
+      </div>
+      @csrf
       <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-    @csrf
     </form>
   </div>
 </div>

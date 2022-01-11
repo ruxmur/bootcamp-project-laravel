@@ -20,7 +20,7 @@ class ContactUsRequest extends FormRequest
             'email' => ['string', 'email', 'required'],
             'tel' => ['string', 'tel', 'required'],
             'sex' => ['required', 'string', Rule::in(['female', 'male'])],
-            'membership' => ['required', 'string', Rule::in(['Trial - 1 month', 'Standart - 12 month', 'Premium - 36 month'])],
+            'membership' => ['required', 'string', Rule::in(['trial', 'standart', 'premium'])],
             'sport' => ['required', 'string', Rule::in(['Aerobic exercise', 'Box', 'Cardio', 'CrossFit', 'Stretching', 'Strenght training', 'Yoga'])],
             'coach'  => ['required', 'string', Rule::in(['Alex', 'Kevin', 'Lana', 'Mark', 'Rockwell', 'Ruth', 'Tom'])],
             'message' => ['required', 'string', 'min:10'],
