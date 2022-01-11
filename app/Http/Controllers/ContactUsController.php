@@ -15,19 +15,18 @@ class ContactUsController extends Controller
 
     public function send(ContactUsRequest $request): RedirectResponse
     {
-        $callback = function (string $test): string {
-            return "{$test} input";
-        };
 
         // dd($request->validated());
         $data = $request->validated();
-        \Log::debug($callback('test'), $data);
+        \Log::debug('test', $data);
 
         \Mail::send(
             'emails.contactUs',
             [
+                'firstname' => $data['firstname'],
+                'lastname' => $data['lastname'],
                 'email' => $data['email'],
-                'name' => $data['name'],
+
                 'messageText' => $data['message'],
 
             ],
