@@ -3,8 +3,9 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
-class CreateFlightsTable extends Migration
+class AlterMembershipTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +14,8 @@ class CreateFlightsTable extends Migration
      */
     public function up()
     {
-        Schema::create('flights', function (Blueprint $table) {
-            $table->id();
-            $table->string('destination');
-            $table->string('departure');
-            $table->timestamps();
+        Schema::table('membership', function (Blueprint $table) {
+            $table->decimal('course', 8, 2);
         });
     }
 
@@ -28,6 +26,8 @@ class CreateFlightsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flights');
+        Schema::table('membership', function (Blueprint $table){
+            $table->dropColumn('course');
+         });
     }
 }

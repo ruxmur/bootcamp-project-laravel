@@ -11,6 +11,7 @@ use App\Models\Membership;
 use App\Models\Reservation;
 use App\Models\WorkoutType;
 
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
