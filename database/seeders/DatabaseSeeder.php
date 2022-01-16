@@ -4,6 +4,14 @@ namespace Database\Seeders;
 use App\Models\Article;
 use App\Models\BlogTag;
 use App\Models\Comment;
+use App\Models\Client;
+use App\Models\AboutClient;
+use App\Models\Coach;
+use App\Models\Membership;
+use App\Models\Reservation;
+use App\Models\WorkoutType;
+
+
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
