@@ -18,7 +18,6 @@ class ContactUsController extends Controller
 
         // dd($request->validated());
         $data = $request->validated();
-        \Log::debug('test', $data);
 
         $mailer->send($data);
 

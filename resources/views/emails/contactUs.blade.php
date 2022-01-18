@@ -13,10 +13,10 @@
   <p>User lastName: {{ $lastName }}</p>
   <p>User email: {{ $email }}</p>
   <p>User tel: {{ $tel }}</p>
-  <p>Sex interested in: {{ implode(',', $sex ?? []) }}</p>
-  <p>Membership interested in: {{ implode(',', $membership ?? []) }}</p>
-  <p>Sport interested in: {{ implode(',', $sport ?? []) }}</p>
-  <p>Coach interested in: {{ implode(',', $coach ?? []) }}</p>
+  <p>Sex: {{ $sex }}</p>
+  <p>Membership: {{ $membership }}</p>
+  <p>Sport: {{ $sport }}</p>
+  <p>Coach: {{ $coach }}</p>
   <p>User messege:</p>
   <p>{{ $messageText }}</p>
 
