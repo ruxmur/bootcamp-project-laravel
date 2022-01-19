@@ -14,7 +14,7 @@ class BlogController extends Controller
     $sort = $request['sort'] ?? 'ASC';
 
     $categories = BlogCategory::all();
-    $category = $request['category'] ?? $categories->first()->id;
+    $category = $request['category'] ?? $categories->first();
 
     $articles = Article::orderby('created_at', $sort)->paginate(7);
     $articles->appends(['sort' => $sort]);
