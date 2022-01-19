@@ -12,7 +12,8 @@ use App\Http\Controllers\ArticleController;
 
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
-Route::get('/services',[ServicesPlanesController::class, 'services'])->name('services');
+Route::get('/services',[ServicesPlanesController::class, 'services'])->name('services')
+->middleware('log.activity:services');
 Route::get('/team',[TeamController::class, 'team'])->name('team');
 Route::get('/about',[AboutController::class, 'about'])->name('about');
 
