@@ -4,11 +4,10 @@ namespace App\Http\Middleware;
 
 use Closure;
 use App\Services\RequestActivityLoggerInterface;
-use Illuminate\Http\Request;
 
 
-class LogActivityMiddleware
-{
+
+class LogActivityMiddleware {
 
     private RequestActivityLoggerInterface $logger;
 
@@ -16,8 +15,7 @@ class LogActivityMiddleware
      * @param RequestActivityLoggerInterface $logger
      */
 
-    public function __contruct(RequestActivityLoggerInterface  $logger)
-    {
+    public function __contruct(RequestActivityLoggerInterface  $logger) {
         $this->logger = $logger;
     }
 

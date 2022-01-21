@@ -84,14 +84,14 @@
       <div class="row">
         <div class="col-md-6 mb-3">
           <label for="firstName">First name</label>
-          <input name="firstName" type="text" value="{{ old('first name') }}" class="form-control" id="firstName" placeholder="" required>
+          <input name="firstName" type="text" value="{{ old('first name') }}" required="required" class="form-control" id="firstName" placeholder="" required>
           <div class="invalid-feedback">
             Valid first name is required.
           </div>
         </div>
         <div class="col-md-6 mb-3">
           <label for="lastName">Last name</label>
-          <input name="lastName" type="text" value="{{ old('last name') }}" class="form-control" id="lastName" placeholder="" required>
+          <input name="lastName" type="text" value="{{ old('last name') }}" required="required" class="form-control" id="lastName" placeholder="" required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>
@@ -100,7 +100,7 @@
 
       <div class="mb-3">
         <label for="email">Email</label>
-        <input name="email" type="email" value="{{ old('email') }}" class="form-control" id="email" placeholder="you@example.com">
+        <input name="email" type="email" value="{{ old('email') }}" required="required" class="form-control" id="email" placeholder="you@example.com">
         <div class="invalid-feedback">
           Please enter a valid email address for shipping updates.
         </div>
@@ -109,7 +109,7 @@
 
       <div class="mb-3">
         <label for="telNo">Telephone / Mobile</label>
-        <input name="telNo" type="tel" value="{{ old('telNo') }}" class="form-control" id="tel" placeholder="+(1) 000 000 000">
+        <input name="telNo" type="tel" value="{{ old('telNo') }}" required="required" class="form-control" id="tel" placeholder="+(1) 000 000 000">
       </div>
 
       <div>
