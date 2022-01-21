@@ -3,22 +3,19 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Psr\Log\LoggerInterface;
-use App\Services\DummyRequestActivityLogger;
-use Illuminate\Http\Request;
+use App\Services\RequestActivityLoggerInterface;
 
 
-class LogActivityMiddleware
-{
 
-    private DummyRequestActivityLogger $logger;
+class LogActivityMiddleware {
+
+    private RequestActivityLoggerInterface $logger;
 
     /**
-     * @param LoggerInterface $logger
+     * @param RequestActivityLoggerInterface $logger
      */
 
-    public function __contruct(DummyRequestActivityLogger $logger)
-    {
+    public function __contruct(RequestActivityLoggerInterface  $logger) {
         $this->logger = $logger;
     }
 
