@@ -9,12 +9,8 @@ class ProductionRequestActivityLogger extends AbstractRequestActivityLogger
     public function collectRequestData(Request $request): array
     {
         return [
-            "id" => $request->input('id'),
-            "name" => $request->input('name'),
-            "type" => $request->input('type'),
-            "duration" => $request->input('duration'),
-            "price" => $request->input('price'),
-
+            "ip" => $request->ip(),
+            "url" => $request->url(),
         ];
     }
 }
