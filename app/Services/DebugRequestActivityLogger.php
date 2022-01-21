@@ -11,7 +11,6 @@ class DebugRequestActivityLogger extends AbstractRequestActivityLogger
         return [
             "ipAddress" => $request->ip(),
             "url" => $request->url(),
-            "membership" => $request->input('membership.type'),
             "method" => $request->method(),
         ];
     }
