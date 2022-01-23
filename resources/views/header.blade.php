@@ -9,10 +9,9 @@
 					<ul class="navigation">
 						<li><a href="{{route('home')}}">HOME</a></li>
 						<li><a href="{{route('services')}}">SERVICES/PLANS</a></li>
-						<li><a href="{{route('booking')}}">BOOKING</a></li>
 						<li><a href="{{route('team')}}">OUR TEAM</a></li>
 						<li><a href="{{route('about')}}">ABOUT US</a></li>
-						<li><a href="{{route('contact')}}">CONTACT</a></li>
+						<li><a href="{{route('contacts')}}">CONTACT US</a></li>
                         <li><a href="{{route('blog')}}">BLOG</a></li>
 					</ul>
 				</div>
