@@ -6,6 +6,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 
+
 class RussianRoulette extends Command
 {
     /**
@@ -46,56 +47,43 @@ class RussianRoulette extends Command
         $numberstring = "x";
         $wincounter = 0;
         $losecounter = 0;
-        $result = 0;
+        
         $numberstat = array();
-        for (;;) {
-
-            print "For exit please write 'stop'\n";
-            print "To continue please enter your number from 1 to 7:\n";
-            $numberstring = readline("Command: \n");
-            if ($numberstring == 'stop') {
-
-                break;
-            }
-
+        $exit_parameter = 'n';
+        $name = $this->ask("Welcome to 'THE RUSSIAN ROULETTE'!");
+        while(strtolower($exit_parameter) != "stop") {
+        
+            $this->info("To continue please enter your number from 1 to 7:");
+            $numberstring = readline("Command: ");
             $numberint = (int) $numberstring;
-
             if ($numberint < 1 or $numberint > 7) {
-                echo "You entered wrong number! Gameover!\n";
+                $this->info("You entered wrong number! Game over!");
 
                 break;
             } else {
                 $numberstat[] = $numberint;
 
-                echo ("Your number:" . $result . "\n");
+                $this->info("Your number:{$numberint}");
                 $game = random_int(1, 7);
-                echo ("Destiny has chosen:" . $game . "\n");
+                $this->info("Destiny has chosen: {$game} ");
                 if ($numberint == $game) {
-                    print "Congratiulations you won\n";
+                    $this->info("Congratiulations you won");
                     $wincounter++;
                 } else {
-                    print "Sorry you are dead\n";
+                    $this->info("Sorry you are dead");
                     $losecounter++;
                 }
             }
+            $this->info("For exit please write 'stop' ");
+
         }
-        echo "You decided to quit? Come back any time!\n";
-        echo ($wincounter . $losecounter);
+        $this->info("You decided to quit? Come back any time!");
+    
+        $countervalues = $this->cacheRepository->get('Results', []);
+        $countervalues[$name] = $countervalues[$name] ?? 0;
+        
 
-
-        $countervalues = array_count_values($numberstat);
-        foreach ($countervalues as $value => $count) {
-
-            $table[] = [$value, $count, $wincounter, $losecounter];
-        }
-
-        // printing array counter
-        // print_r($countervalues);
-        $this->table(['Number', 'Counter', 'totalWins', 'totalDefeats'], $table);
-
-
-        $this->cacheRepository->set('Results',  86400);  //seconds in a day 
-
+        $this->cacheRepository->set('Results', 86400);  //seconds in a day 
 
     }
 }
