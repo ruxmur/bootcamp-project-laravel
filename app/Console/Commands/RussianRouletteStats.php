@@ -20,7 +20,7 @@ class RussianRouletteStats extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Statistics of Russian Roulette game.';
 
     private CacheRepository $cacheRepository;
 
@@ -42,31 +42,40 @@ class RussianRouletteStats extends Command
      */
     public function handle()
     {
-        $countervalues = $this->cacheRepository->get('Results', []);
-        
-        $numberstat = array();
-        $wincounter = 0;
-        $losecounter = 0;
-        $numberint = 0;
-        $numberstring = "x";
-        $numberstat = array();
 
-        $numberint = (int) $numberstring;
-        $numberstat[] = $numberint;
-        $wincounter++;
-        $losecounter++;
+        $numberstatplayer = $this->cacheRepository->get('Player Numbers', []);
+        $numberstatgame = $this->cacheRepository->get('Game numbers', []);
+        $winstat = $this->cacheRepository->get('Win counter', []);
+        $losestat = $this->cacheRepository->get('Lose counter', []);
 
-        echo ($wincounter . $losecounter);
+        $countervalues = array_count_values($numberstatplayer);
+        $countervaluesgame = array_count_values($numberstatgame);
+        $countervalueswin = array_count_values($winstat);
+        $countervalueslose = array_count_values($losestat);
 
-        $countervalues = array_count_values($numberstat);
-        $table = [];
         foreach ($countervalues as $value => $count) {
+            $table1[] = [$value, $count];
+        }
+        foreach ($countervaluesgame as $value => $count) {
 
-            $table[] = [$wincounter, $losecounter, $value, $count] ;
+            $table2[] = [$value, $count];
+        }
+        foreach ($countervalueswin as $value => $count) {
+
+            $table3[] = [$value, $count];
+        }
+        foreach ($countervalueslose as $value => $count) {
+
+            $table4[] = [$value, $count];
         }
 
-        $this->table(['totalWins', 'totalDefeats', 'Number', 'Counter'], $table);
-
-        $this->cacheRepository->set('Results',  86400);  //seconds in a day  
+        $this->info('Player Numbers and Counts Statistics');
+        $this->table(['Number', 'Occurence'], $table1);
+        $this->info('Game Numbers and Counts Statistics');
+        $this->table(['Number', 'Occurence'], $table2);
+        $this->info('Player Win and Counts Statistics');
+        $this->table(['Number', 'Occurence'], $table3);
+        $this->info('Player Lose and Counts Statistics');
+        $this->table(['Number', 'Occurence'], $table4);
     }
 }

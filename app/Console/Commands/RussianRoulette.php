@@ -14,14 +14,14 @@ class RussianRoulette extends Command
      *
      * @var string
      */
-    protected $signature = 'ru-roulette:test';
+    protected $signature = 'ru-roulette:play';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Play Russian Roulette game.';
 
     private CacheRepository $cacheRepository;
 
@@ -43,47 +43,49 @@ class RussianRoulette extends Command
      */
     public function handle()
     {
-        $numberint = 0;
-        $numberstring = "x";
-        $wincounter = 0;
-        $losecounter = 0;
-        
-        $numberstat = array();
-        $exit_parameter = 'n';
-        $name = $this->ask("Welcome to 'THE RUSSIAN ROULETTE'!");
-        while(strtolower($exit_parameter) != "stop") {
-        
-            $this->info("To continue please enter your number from 1 to 7:");
-            $numberstring = readline("Command: ");
-            $numberint = (int) $numberstring;
-            if ($numberint < 1 or $numberint > 7) {
-                $this->info("You entered wrong number! Game over!");
+
+        $number = 0;
+        $winstat = [];
+        $losestat = [];
+        $counter = 0;
+        $numberstatplayer = [];
+        $numberstatgame = [];
+        $this->info("Welcome to 'THE RUSSIAN ROULETTE'!");
+        while ($number > 1 or $number < 6) {
+
+            $this->info("To continue please enter your number from 1 to 6:");
+            $number = $this->ask("Command: ");
+
+            if ($number < 1 or $number > 6) {
+                $this->info("Game over!");
 
                 break;
             } else {
-                $numberstat[] = $numberint;
+                $numberstatplayer[] = $number;
 
-                $this->info("Your number:{$numberint}");
-                $game = random_int(1, 7);
+                $this->info("Your number:{$number}");
+                $game = random_int(1, 6);
+                array_push($numberstatgame, $game);
                 $this->info("Destiny has chosen: {$game} ");
-                if ($numberint == $game) {
-                    $this->info("Congratiulations you won");
-                    $wincounter++;
-                } else {
+                $counter++;
+                if ($number == $game) {
                     $this->info("Sorry you are dead");
-                    $losecounter++;
+                    array_splice($losestat, ($counter - 1), 0, $number);
+                    array_splice($winstat, ($counter - 1), 0, 'out of count');
+                } else {
+                    $this->info("Congratiulations you won");
+                    array_splice($winstat, ($counter - 1), 0, $number);
+                    array_splice($losestat, ($counter - 1), 0, 'out of count');
                 }
             }
-            $this->info("For exit please write 'stop' ");
-
+            $this->info("If you want to break enter anything except [1;6] ");
         }
         $this->info("You decided to quit? Come back any time!");
-    
-        $countervalues = $this->cacheRepository->get('Results', []);
-        $countervalues[$name] = $countervalues[$name] ?? 0;
+
+        $this->cacheRepository->set('Player Numbers', $numberstatplayer, 86400);
+        $this->cacheRepository->set('Game numbers', $numberstatgame, 86400);
+        $this->cacheRepository->set('Win counter', $winstat, 86400);
+        $this->cacheRepository->set('Lose counter', $losestat, 86400);
         
-
-        $this->cacheRepository->set('Results', 86400);  //seconds in a day 
-
     }
 }
