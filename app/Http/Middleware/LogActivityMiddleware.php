@@ -3,20 +3,24 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Services\RequestActivityLoggerInterface;
+use App\Services\DummyRequestActivityLogger;
+use Illuminate\Http\Request;
 
 
-
-class LogActivityMiddleware {
-
-    private RequestActivityLoggerInterface $logger;
+class LogActivityMiddleware
+{
+    private DummyRequestActivityLogger $logger;
+   
 
     /**
-     * @param RequestActivityLoggerInterface $logger
+     * @param DummyRequestActivityLogger $logger
+
      */
 
-    public function __contruct(RequestActivityLoggerInterface  $logger) {
+    public function __contruct(DummyRequestActivityLogger  $logger) {
         $this->logger = $logger;
+        
+
     }
 
     /**
@@ -28,6 +32,8 @@ class LogActivityMiddleware {
     public function handle($request, Closure $next, ?string $type = null)
     {
         $this->logger->logRequest($request, $type ?? 'unknown page');
+        
+
         return $next($request);
     }
 }
