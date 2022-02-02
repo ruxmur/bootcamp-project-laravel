@@ -14,10 +14,10 @@ class LogActivityMiddleware
 
     /**
      * @param DummyRequestActivityLogger $logger
+
      */
 
-    public function __contruct(DummyRequestActivityLogger $logger)
-    {
+    public function __contruct(DummyRequestActivityLogger  $logger) {
         $this->logger = $logger;
         
 
