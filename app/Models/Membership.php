@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Membership extends Model
+class Membership extends Model implements LoggableInterface 
 {
     use HasFactory;
 
     protected $fillable = [
         'id',
         'name',
-        'types',
+        'type',
         'duration',
         'price',
         'price_lei'
@@ -23,4 +23,18 @@ class Membership extends Model
         return $this->hasMany(Client::class);
     }
 
+    public function convertToLoggableString(): string
+    {
+       return "Membership with id {$this->id}";
+    }
+
+    public function getData(): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'type' => $this->type,
+            'price' => $this->price,
+        ];
+    }
 }

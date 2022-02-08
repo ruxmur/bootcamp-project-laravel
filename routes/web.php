@@ -27,3 +27,4 @@ Route::get('/blog/article/{id}',[ArticleController::class, 'show'])->name('blogA
 Route::get('/api/articles/most-popular',[ArticleApiController::class, 'readMostPopular']);
 Route::get('/api/articles',[ArticleApiController::class, 'readAll']);
 Route::get('/api/articles/{id}',[ArticleApiController::class, 'readOne']);
+

@@ -13,7 +13,7 @@ class ArticleController extends Controller
         $article = Article::findOrFail($articleId);
         $article->view_count++;
         $article->save();
-        
+
         $logger->logModel($request->user(), $article); 
    
         return view('article.article', ['article' => $article]);
