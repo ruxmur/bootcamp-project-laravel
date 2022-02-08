@@ -23,3 +23,8 @@ Route::post('/contactUs',[ContactUsController::class, 'send'])->name('contactUs.
 
 Route::get('/blog',[BlogController::class, 'blog'])->name('blog');
 Route::get('/blog/article/{id}',[ArticleController::class, 'show'])->name('blogArticle');
+
+Route::get('/api/articles/most-popular',[ArticleApiController::class, 'readMostPopular']);
+Route::get('/api/articles',[ArticleApiController::class, 'readAll']);
+Route::get('/api/articles/{id}',[ArticleApiController::class, 'readOne']);
+

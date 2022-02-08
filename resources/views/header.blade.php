@@ -12,7 +12,7 @@
 						<li><a href="{{route('team')}}">OUR TEAM</a></li>
 						<li><a href="{{route('about')}}">ABOUT US</a></li>
 						<li><a href="{{route('contacts')}}">CONTACT US</a></li>
-                        <li><a href="{{route('blog')}}">BLOG</a></li>
+            <li><a href="{{route('blog')}}">BLOG</a></li>
 					</ul>
 				</div>
 			</div>
