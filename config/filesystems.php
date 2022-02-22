@@ -42,6 +42,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'generalUsage' => [
+            'driver' => 'public',
+            'root' => storage_path('app/public/general-usage'),
+            'url' => env('APP_URL').'/storage/general-usage',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
