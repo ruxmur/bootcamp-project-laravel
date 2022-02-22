@@ -14,7 +14,7 @@ class ArticleViewCountColumn extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table){
-            $table->integer('view_column')
+            $table->integer('view_count')
                  ->default(0);
         });
     }
@@ -27,7 +27,7 @@ class ArticleViewCountColumn extends Migration
     public function down()
     {
         Schema::table('articles', function (Blueprint $table){
-            $table->dropColumn('view_column');
+            $table->dropColumn('view_count');
         });
     }
 }

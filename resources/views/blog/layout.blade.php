@@ -35,8 +35,15 @@
 				<div class="container-fluid">
 					@include('header')
 					<div class="row">
-						<div class="col-12">
-							@yield('content')	
+						<div class="col-9">
+							<div class="content-body">
+								@yield('content')
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="content-body">
+								@include('blog.popular-articles')
+							</div>
 						</div>
 					</div>
 				</div>
@@ -47,23 +54,3 @@
 </body>
 
 </html>
-
-
-
-{{-- kak po primeru
-<div class="container-fluid">
-@include('header')
-<div class="row">
-<div class="col-9">
-<div class="content-body">
-@yield('content')
-</div> 
-</div>
-<div class="col-3">
-<div class="content-body">
-@include('blog.popular-articles')
-tut bil >template on v popular-articles.blade.php
-</div> 
-</div>
-</div>
-</div> --}}

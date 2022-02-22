@@ -1,17 +1,29 @@
-@extends('layout')
+@extends('blog.layout')
 <!-- <link rel="stylesheet" type="text/css" href="{{asset('assets/css/app.css')}}"> -->
 @section('content')
 <h1>BLOG</h1>
 <div class="row">
-    {{$articles->links()}}
+    <div class="col"> {{$articles->links()}}
+
+    <!-- <div class="m-0 p-0 d-flex justify-content-between">
+                    <div class="col">
+                        <a class="btn btn-primary" href="/blog/article/create">Create an article</a>
+                    </div>
+                    <div class="col">
+                        {{ $articles->links() }}
+                    </div> -->
+
+    </div>
+    <div class="col">
+        <a class="btn btn-ptimary" href="/blog/article/create">Create an article</a>
+    </div>
 </div>
 <div>
     <form method="GET" action="/blog" class="row row-cols-3 m-4 mb-4">
         <div class="col">
             <select class="form-select" name="category">
                 @foreach($categories as $category)
-                <option value="{{$category->id}}" 
-                   @if($filter['category'] === $category->id) selected @endif
+                <option value="{{$category->id}}" @if($filter['category']===$category->id) selected @endif
                     >{{$category->name}}</option>
                 @endforeach
                 <option value="ASC" @if($filter['sort']==='ASC' ) selected @endif>ASC</option>

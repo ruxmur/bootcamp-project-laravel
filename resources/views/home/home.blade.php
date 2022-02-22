@@ -122,7 +122,7 @@
     
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 row mn">
     
-                                <img src="///home/rux/GYM/myproject/images/personal.svg" class=" col-4 col-sm-4 col-md-4 col-lg-4 sev-img ">
+                                <img src="/storage/general-usage/personal.svg" class=" col-4 col-sm-4 col-md-4 col-lg-4 sev-img ">
                                 <p class="col-2 col-sm-2 col-md-2 col-lg-2 prog">Personal Training
                                 <p> 
     
