@@ -9,12 +9,12 @@ use App\Services\ModelLogger;
 
 class ServicesPlanesController extends Controller
 {
-    public function showService(/*$membershipId,*/ Request $request/*, ModelLogger $logger*/)
+    public function showService( Request $request/*, ModelLogger $logger*/)
     {
     }
 
 
-    // public function showList(/*$membershipId,*/ Request $request/*, ModelLogger $logger*/)
+    // public function showService(/*$membershipId,*/ Request $request/*, ModelLogger $logger*/)
     // {
     //     $services = Membership::with('name', 'type', 'duration')->get();
         

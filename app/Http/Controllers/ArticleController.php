@@ -11,6 +11,8 @@ use Illuminate\Http\JsonResponse;
 use App\Http\Requests\ArticleRequest;
 use App\Models\BlogCategory;
 use App\Models\User;
+use App\Models\Comment;
+use Illuminate\Http\Resources\Json\JsonResource;
 
 class ArticleController extends Controller
 {

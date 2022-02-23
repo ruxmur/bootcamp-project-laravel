@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@900&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" href="../images/POWER.png" sizes="32X32">
+	<link rel="icon" type="/storage/general-usage/png" href="/storage/general-usage/POWER.png" sizes="32X32">
 	<!-- GLOBAL CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap-grid.min.css')}}">

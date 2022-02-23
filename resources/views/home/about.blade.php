@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div class="row height-max image-header
 
-                align-items-center" style="background-image: url(images/jonathan.jpg);">
+                align-items-center" style="background-image: url(/storage/general-usage/jonathan.jpg);">
         <div class="col-12 h-info d-flex justify-content-center
                     align-items-center col-lg-6 img-section">
 
@@ -25,7 +25,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="///home/rux/GYM/myproject/images/slide1.jpg" class="d-block w-30 mx-auto border-radius: 50%" alt="...">
+                <img src="/storage/general-usage/slide1.jpg" class="d-block w-30 mx-auto border-radius: 50%" alt="...">
                 <div class="reviews">
                     <h1 class="clientname">Jackie Joyner-Kersee</h1>
                     <p class="review">
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="///home/rux/GYM/myproject/images/slide2.jpg" class="d-block w-30 mx-auto" alt="...">
+                <img src="/storage/general-usage/slide2.jpg" class="d-block w-30 mx-auto" alt="...">
                 <div class="reviews">
                     <h1 class="clientname">Michael Jordan</h1>
                     <p class="review">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="///home/rux/GYM/myproject/images/slide3.jpg" class="d-block w-30 mx-auto" alt="...">
+                <img src="/storage/general-usage/slide3.jpg" class="d-block w-30 mx-auto" alt="...">
                 <div class="reviews">
                     <h1 class="clientname">Jim Rohn</h1>
                     <p class="review">
@@ -55,11 +55,11 @@
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"><img src="///home/rux/GYM/myproject/images/prev.svg" class="navimg"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"><img src="/storage/general-usage/prev.svg" class="navimg"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"><img src="///home/rux/GYM/myproject/images/next.svg" class="navimg"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"><img src="/storage/general-usage/next.svg" class="navimg"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -72,7 +72,7 @@
       <div class="row about-us">
         <div class="col-12 mx-auto col-lg-6 img-section my-3">
           <div class="">
-            <img src="images/edgar-chaparro.png" alt="gyming" class="img-fluid" />
+            <img src="/storage/general-usage/edgar-chaparro.png" alt="gyming" class="img-fluid" />
           </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center col-lg-6 img-section my-3">
@@ -171,23 +171,23 @@
       </div>
       <div class="row text-center  icon-text py-5">
         <div class="col-12 col-lg-2 col-half-offset py-2">
-          <img src="images/bx_bx-calendar-heart.png" alt="calender">
+          <img src="/storage/general-usage/bx_bx-calendar-heart.png" alt="calender">
           <p class=" p-5">Consultation</p>
         </div>
         <div class=" col-lg-2 col-half-offset py-2">
-          <img src="images/cil_people.png" alt="people">
+          <img src="/storage/general-usage/cil_people.png" alt="people">
           <p class="p-5">Best Trainers</p>
         </div>
         <div class=" col-lg-2 col-half-offset py-2">
-          <img src="images/bx_bx-time.png" alt="time">
+          <img src="/storage/general-usage/bx_bx-time.png" alt="time">
           <p class=" p-5">2000 Working Hours</p>
         </div>
         <div class=" col-lg-2 col-half-offset py-2">
-          <img src="images/carbon_thumbs-up.png" alt="thumbs-up">
+          <img src="/storage/general-usage/carbon_thumbs-up.png" alt="thumbs-up">
           <p class=" p-5">1000 Success Stories</p>
         </div>
         <div class=" col-lg-2 col-half-offset py-2">
-          <img src="images/bi_heart.png" alt="heart">
+          <img src="/storage/general-usage/bi_heart.png" alt="heart">
           <p class=" p-5">3500 Happy Clients</p>
         </div>
       </div>

@@ -17,7 +17,7 @@
     <hr class="text-center horizontal">
     <div class="flex">
       <div class="card text-center">
-        <img src="./images/ruth.jpg" width="100%">
+        <img src="/storage/general-usage/ruth.jpg" width="100%">
         <h1>RUTH</h1>
         <div class="overlay"></div>
         <div class="hidden">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="card text-center">
-        <img src="./images/kevin.jpg" width="100%">
+        <img src="/storage/general-usage/kevin.jpg" width="100%">
         <h1>KEVIN</h1>
         <div class="overlay"></div>
         <div class="hidden">
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="card text-center">
-        <img src="./images/lana.jpg" width="100%">
+        <img src="/storage/general-usage/lana.jpg" width="100%">
         <h1>LANA</h1>
         <div class="overlay"></div>
         <div class="hidden">
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="card text-center">
-        <img src="./images/mark.jpg" width="100%">
+        <img src="/storage/general-usage/mark.jpg" width="100%">
         <h1>MARK</h1>
         <div class="overlay"></div>
         <div class="hidden">
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="card text-center">
-        <img src="./images/alex.jpg" width="100%">
+        <img src="/storage/general-usage/alex.jpg" width="100%">
         <h1>ALEX</h1>
         <div class="overlay"></div>
         <div class="hidden">
@@ -67,7 +67,7 @@
         </div>
       </div>
       <div class="card text-center">
-        <img src="./images/rockwell.jpg" width="100%">
+        <img src="/storage/general-usage/rockwell.jpg" width="100%">
         <div class="overlay"></div>
         <h1>ROCKWELL</h1>
         <div class="hidden">

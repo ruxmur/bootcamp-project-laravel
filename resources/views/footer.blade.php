@@ -11,9 +11,9 @@
                 <div class="socials">
                     <p class="slogn">Make your POWER</p>
                     <p class="socialicons margin">
-                        <a href="#"><img class="m-0 p-0 px-2 margin" src="images/instagram.svg" alt="instagram logo"></a>
-                        <a href="#"><img class="m-0 p-0 px-2" src="images/twitter.svg" alt="twitter logo"></a>
-                        <a href="#"><img class="m-0 p-0 px-2" src="images/facebook.svg" alt="facebook logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2 margin" src="/storage/general-usage/instagram.svg" alt="instagram logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2" src="/storage/general-usage/twitter.svg" alt="twitter logo"></a>
+                        <a href="#"><img class="m-0 p-0 px-2" src="/storage/general-usage/facebook.svg" alt="facebook logo"></a>
                     </p>
                 </div>
             </nav>
@@ -35,9 +35,9 @@
                     <li class="">Make your POWER</li>
                     <li>
                         <p class="socialicons_margin">
-                            <a href="#"><img class="m-0 p-0 px-1 float-right margin" src="images/instagram.svg" alt="instagram logo"></a>
-                            <a href="#"><img class="m-0 p-0 px-1 float-right" src="images/twitter.svg" alt="twitter logo"></a>
-                            <a href="#"><img class="m-0 p-0 px-1 float-right" src="images/facebook.svg" alt="facebook logo"></a>
+                            <a href="#"><img class="m-0 p-0 px-1 float-right margin" src="/storage/general-usage/instagram.svg" alt="instagram logo"></a>
+                            <a href="#"><img class="m-0 p-0 px-1 float-right" src="/storage/general-usage/twitter.svg" alt="twitter logo"></a>
+                            <a href="#"><img class="m-0 p-0 px-1 float-right" src="/storage/general-usage/facebook.svg" alt="facebook logo"></a>
                         </p>
                     </li>
                 </ul>
@@ -53,7 +53,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
-	<!-- <script src="js/main.js"></script> -->
+	<script src="js/main.js"></script> 
 	<script type="text/javascript" src="js/wow.js"></script>
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/blog.js"></script>

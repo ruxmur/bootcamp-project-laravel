@@ -1,17 +1,17 @@
 @extends('blog.layout')
-<!-- <link rel="stylesheet" type="text/css" href="{{asset('assets/css/app.css')}}"> -->
+{{-- <link rel="stylesheet" type="text/css" href="{{asset('assets/css/app.css')}}"> --}}
 @section('content')
 <h1>BLOG</h1>
 <div class="row">
     <div class="col"> {{$articles->links()}}
 
-    <!-- <div class="m-0 p-0 d-flex justify-content-between">
+    {{-- <div class="m-0 p-0 d-flex justify-content-between">
                     <div class="col">
                         <a class="btn btn-primary" href="/blog/article/create">Create an article</a>
                     </div>
                     <div class="col">
                         {{ $articles->links() }}
-                    </div> -->
+                    </div> --}}
 
     </div>
     <div class="col">
