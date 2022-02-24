@@ -157,7 +157,7 @@ main{
 
 
 .mobile-foot{
-    
+
     display: grid;
     height: 100vh;
     background: #6d6c68e3;
@@ -170,7 +170,7 @@ main{
     font-style: normal;
     font-weight: bold;
     font-size: 0.75rem;
-    
+
 }
 
 .mobilenav, .mobilenav li{
@@ -199,7 +199,7 @@ main{
 @media all and (min-width: 420px){
     .mobile-foot{
         height: 100vh;
-    }   
+    }
 }
 
 /* TABLET AND OTHER BIG SCREENS RESPONSIVENESS */
@@ -268,7 +268,7 @@ main{
         list-style: none;
         padding: 0 3% 1% 0;
         align-items: center;
-        justify-content: center;        
+        justify-content: center;
         color: #FFFFFF;
     }
 
@@ -277,7 +277,7 @@ main{
         list-style: none;
         padding: 0 30px;
         align-items: center;
-        justify-content: center;        
+        justify-content: center;
         color: #FFFFFF;
     }
 
@@ -327,12 +327,12 @@ main{
     }
 
     .px-2{
-       padding: 0px; 
+       padding: 0px;
     }
 }
 
 @media only screen and (min-width: 992px){
-   
+
 
     .navigation ,.navigation a{
         display: flex;
@@ -358,7 +358,7 @@ main{
     .navigation, .navigation a{
         font-size: 12px;
         padding: 0 0.6rem;
-    }   
+    }
 }
 
 
