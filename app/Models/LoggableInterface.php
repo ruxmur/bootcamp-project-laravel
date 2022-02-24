@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use PhpParser\Comment;
 
 interface LoggableInterface
 {
@@ -16,7 +15,7 @@ interface LoggableInterface
     public function convertToLoggableString(): string;
 
     /**
-     *Get Loggable object data for log context. 
+     *Get Loggable object data for log context.
      *
      *@return array
      */

@@ -16,7 +16,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="categoryInput" class="form-label">Category</label>
+                <label for="categoryInput" class="form-label">Category</label>article
                 <select id="categoryInput" class="form-select" name="category">
                     <option selected disabled>Select category</option>
                     @foreach($categories as $category)

@@ -9,6 +9,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\Api\ArticleApiController;
 
 
 Route::get('/',[HomeController::class, 'index'])->name('home');
@@ -21,8 +22,8 @@ Route::get('/about',[AboutController::class, 'about'])->name('about');
 
 Route::get('/contacts',[ContactUsController::class, 'contact'])->name('contacts');
 Route::post('/contactUs',[ContactUsController::class, 'send'])->name('contactUs.send')
-->middleware('log.activity:sendContactUs')
-; Route::get('/cart', [CartController::class, 'index'])->name('cart');
+->middleware('log.activity:sendContactUs');
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
 
 Route::get('/blog',[BlogController::class, 'blog'])->name('blog');
 Route::get('/blog/article/create',[ArticleController::class, 'create']);
