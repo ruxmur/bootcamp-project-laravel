@@ -14,17 +14,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@900&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" href="/storage/general-usage/POWER.png" sizes="32X32">
+	<link rel="icon" type="image/png" href="/images/POWER.png" sizes="32X32">
 	<!-- GLOBAL CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap-grid.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/header-footer.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/animate.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}">
+{{--	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}">--}}
 	<!-- ADD YOUR CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
 	{{-- <link rel="stylesheet" type="text/css" href="{{asset('assets/blog/css/blog.css')}}"> --}}
-
 </head>
 
 <body>
@@ -38,7 +37,7 @@
 					@include('header')
 					<div class="row">
 						<div class="col-12">
-							@yield('content')	
+							@yield('content')
 						</div>
 					</div>
 				</div>
@@ -59,13 +58,13 @@
 <div class="col-9">
 <div class="content-body">
 @yield('content')
-</div> 
+</div>
 </div>
 <div class="col-3">
 <div class="content-body">
 @include('blog.popular-articles')
 tut bil >template on v popular-articles.blade.php
-</div> 
+</div>
 </div>
 </div>
 </div> --}}

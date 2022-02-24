@@ -20,19 +20,19 @@
     </div>
     <div id="rectangle7"></div>
 <!-- Hero section Ends -->
-	
+
     <div id="services">
       <h2 class="text-center my-5 select__services">Select services</h2>
     </div>
-	
+
 <!-- Services Cards start	 -->
     <div class="container-fluid mb-5 px-5">
       <div class="row d-flex justify-content-around">
         <div class="mb-4 item">
             <div class="overlay"></div>
           <a href="###">
-            <img src="/storage/general-usage/Group 24.svg" width="100%"></a>
-          <div class="item-text">Personal Training 
+            <img src="/images/Group 24.svg" width="100%"></a>
+          <div class="item-text">Personal Training
             <p class="hidden">
               We also organise group programmes that enhance your fitness. We
               also group our customers for the training session
@@ -42,7 +42,7 @@
         <div class="mb-4 item">
             <div class="overlay"></div>
           <a href="###">
-            <img src="/storage/general-usage/Rectangle 51.svg" width="100%"></a>
+            <img src="/images/Rectangle 51.svg" width="100%"></a>
 
           <div class="item-text">
               Group Programmes
@@ -55,7 +55,7 @@
         <div class=" mb-4 item">
           <div class="overlay"></div>
           <a href="###">
-            <img src="/storage/general-usage/Group 26.svg" width="100%"></a>
+            <img src="/images/Group 26.svg" width="100%"></a>
 
           <div class="item-text big">
 			Online Programmes
@@ -68,14 +68,14 @@
       </div>
     </div>
 <!-- services Cards ends	 -->
-	
+
 <!-- Icons section starts	 -->
     <div class="container-fluid px-5">
       <div class="row ico">
         <div class="col-12 col-sm mb-3">
           <a href="###">
             <img
-              src="/storage/general-usage/bx_bx-calendar-heart.svg"
+              src="/images/bx_bx-calendar-heart.svg"
               alt=""
           /></a>
 
@@ -83,14 +83,14 @@
         </div>
         <div class="col-12 col-sm mb-3">
           <a href="###">
-            <img src="/storage/general-usage/cil_people.svg" alt=""
+            <img src="/images/cil_people.svg" alt=""
           /></a>
 
           <div class="pt-4 font-weight-bold ico-inner-sm">Best Trainers</div>
         </div>
         <div class="col-12 col-sm mb-3">
           <a href="###">
-            <img src="/storage/general-usage/bx_bx-time.svg" alt=""
+            <img src="/images/bx_bx-time.svg" alt=""
           /></a>
 
           <div class="pt-4 font-weight-bold ico-inner">2000 Working Hours</div>
@@ -98,7 +98,7 @@
         <div class="col-12 col-sm mb-3">
           <a href="###">
             <img
-              src="/storage/general-usage/carbon_thumbs-up.svg"
+              src="/images/carbon_thumbs-up.svg"
               alt=""
           /></a>
 
@@ -106,14 +106,14 @@
         </div>
         <div class="col-12 col-sm mb-3">
           <a href="###">
-            <img src="/storage/general-usage/bi_heart.svg" alt=""
+            <img src="/images/bi_heart.svg" alt=""
           /></a>
 
           <div class="pt-4 font-weight-bold ico-inner">3500 Happy Clients</div>
         </div>
       </div>
     </div>
-	
+
 
   </header>
 
@@ -152,7 +152,7 @@
 
       <!---- First Card ---->
 
-     
+
       <div>
         <div class="card" style="width: 23rem; box-shadow: 0 0 10px;">
           <div class="row text-left" style="
@@ -166,33 +166,33 @@
               <div class="flat mb-3"></div>
               <p><span>$100</span>/day</p>
             </div>
-            <img src="/storage/general-usage/Layer 3 1.png" style="width: 111px; height: 205px;" class="card-img-top" alt="..." />
+            <img src="/images/Layer 3 1.png" style="width: 111px; height: 205px;" class="card-img-top" alt="..." />
           </div>
           <div class="card-body cards">
             <table class="table table-bordered table-hover">
               <tbody>
                 <tr>
                   <th scope="col">
-                    <img src="/storage/general-usage/Vector1.svg" alt="" srcset="" />
+                    <img src="/images/Vector1.svg" alt="" srcset="" />
                   </th>
                   <th scope="col">Entry Date: Monday - Sunday</th>
                 </tr>
                 <tr>
                   <th scope="row">
-                    <img src="/storage/general-usage/Vector4.png" alt="" srcset="" />
+                    <img src="/images/Vector4.png" alt="" srcset="" />
                   </th>
                   <td>Entry Time: 7am - 9pm</td>
                 </tr>
-                
+
                 <tr>
                   <th scope="row">
-                    <img src="/storage/general-usage/Vector2.png" alt="" />
+                    <img src="/images/Vector2.png" alt="" />
                   </th>
                   <td colspan="2">Personal Trainer</td>
                 </tr>
                 <tr>
                   <th scope="col">
-                    <img src="/storage/general-usage/Vector.png" alt="" srcset="" />
+                    <img src="/images/Vector.png" alt="" srcset="" />
                   </th>
                   <th scope="col">Entry Date: Monday - Sunday</th>
                 </tr>
@@ -217,32 +217,32 @@
               <div class="flat mb-3"></div>
               <p><span>$800</span>/Monthly</p>
             </div>
-            <img src="/storage/general-usage/Layer 4 1.png" style="width: 111px; height: 205px;" class="card-img-top" alt="..." />
+            <img src="/images/Layer 4 1.png" style="width: 111px; height: 205px;" class="card-img-top" alt="..." />
           </div>
           <div class="card-body cards">
             <table class="table table-bordered table-hover">
               <tbody>
                 <tr>
                   <th scope="col">
-                    <img src="/storage/general-usage/Vector1.svg" alt="" srcset="" />
+                    <img src="/images/Vector1.svg" alt="" srcset="" />
                   </th>
                   <th scope="col">Entry Date: Monday - Sunday</th>
                 </tr>
                 <tr>
                   <th scope="row">
-                    <img src="/storage/general-usage/Vector4.png" alt="" srcset="" />
+                    <img src="/images/Vector4.png" alt="" srcset="" />
                   </th>
                   <td>Entry Time: 7am - 9pm</td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    <img src="/storage/general-usage/Vector2.png" alt="" />
+                    <img src="/images/Vector2.png" alt="" />
                   </th>
                   <td colspan="2">Personal Trainer</td>
                 </tr>
                 <tr>
                   <th scope="col">
-                    <img src="/storage/general-usage/Vector.png" alt="" srcset="" />
+                    <img src="/images/Vector.png" alt="" srcset="" />
                   </th>
                   <th scope="col">Entry Date: Monday - Sunday</th>
                 </tr>
@@ -258,7 +258,7 @@
 
 
       <!---- Third Card ---->
-      
+
       <div id="t-card">
         <div class="card" style="width: 23rem; box-shadow: 0 0 10px;">
           <div class="row text-left" style="
@@ -271,33 +271,33 @@
               <div class="flat mb-3"></div>
               <p><span>$3,500</span>/Yearly</p>
             </div>
-            <img src="/storage/general-usage/Layer 5 2.png" style="width: 111px; height: 205px;" class="card-img-top" alt="..." />
+            <img src="/images/Layer 5 2.png" style="width: 111px; height: 205px;" class="card-img-top" alt="..." />
           </div>
           <div class="card-body cards">
             <table class="table table-bordered table-hover">
               <tbody>
                 <tr>
                   <th scope="col">
-                    <img src="/storage/general-usage/Vector1.svg" alt="" srcset="" />
+                    <img src="/images/Vector1.svg" alt="" srcset="" />
                   </th>
                   <th scope="col">Entry Date: Monday - Sunday</th>
                 </tr>
                 <tr>
                   <th scope="row">
-                    <img src="/storage/general-usage/Vector4.png" alt="" srcset="" />
+                    <img src="/images/Vector4.png" alt="" srcset="" />
                   </th>
                   <td>Entry Time: 7am - 9pm</td>
                 </tr>
                 <tr>
                 <tr>
                   <th scope="row">
-                    <img src="/storage/general-usage/Vector2.png" alt="" />
+                    <img src="/images/Vector2.png" alt="" />
                   </th>
                   <td colspan="2">Personal Trainer</td>
                 </tr>
                 <tr>
                   <th scope="col">
-                    <img src="/storage/general-usage/Vector.png" alt="" srcset="" />
+                    <img src="/images/Vector.png" alt="" srcset="" />
                   </th>
                   <th scope="col">Entry Date: Monday - Sunday</th>
                 </tr>
