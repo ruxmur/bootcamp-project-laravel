@@ -22,31 +22,40 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/images/slide1.jpg" class="d-block w-30 mx-auto" alt="...">
+                    <div class="carousel-item-img">
+                        <img src="/images/slide1.jpg" class="d-block w-30 mx-auto" alt="...">
+                    </div>
                     <div class="reviews">
                         <h1 class="clientname">Jackie Joyner-Kersee</h1>
                         <p class="review">
                             Age is no barrier. It's a limitation you put on your mind.<br>
                         </p>
                     </div>
+
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/slide2.jpg" class="d-block w-30 mx-auto" alt="...">
+                    <div class="carousel-item-img">
+                        <img src="/images/slide2.jpg" class="d-block w-30 mx-auto" alt="...">
+                    </div>
                     <div class="reviews">
                         <h1 class="clientname">Michael Jordan</h1>
                         <p class="review">
                             Some people want it to happen, some wish it would happen, others make it happen.<br>
                         </p>
                     </div>
+
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/slide3.jpg" class="d-block w-30 mx-auto" alt="...">
+                    <div class="carousel-item-img">
+                        <img src="/images/slide3.jpg" class="d-block w-30 mx-auto" alt="...">
+                    </div>
                     <div class="reviews">
                         <h1 class="clientname">Jim Rohn</h1>
                         <p class="review">
                             Discipline is the bridge between goals and accomplishment.<br>
                         </p>
                     </div>
+
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -104,7 +113,7 @@
             <!-- ...section title -->
             <div class="row">
                 <div class="col d-flex flex-wrap justify-content-center my-5">
-                    <h2 class="font-weight-bolder align-items-center title">
+                    <h2 class="font-weight-bolder align-items-center title" style="color: white">
                         Our Vision & Mission
                     </h2>
                 </div>

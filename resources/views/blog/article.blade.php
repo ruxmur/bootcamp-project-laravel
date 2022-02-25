@@ -14,7 +14,7 @@
 
 
 
-{{-- <!-- 
+{{-- <!--
 <div class="article_card">
   <div class="article_category-name">
     <h4 class="category-name">{{ $article->category->name }}</h4>

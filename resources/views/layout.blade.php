@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="POWER: a html template for Gym lessons application">
 	<meta name="keyword" content="HTML, CSS, BOOTSTRAP">
-	<!-- OPTIMIZIED VIEWPORT FOR MOBILE -->
+	<!-- OPTIMIZED VIEWPORT FOR MOBILE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale =1.0">
 	<title>POWER</title>
@@ -17,15 +17,11 @@
 	<link rel="icon" type="image/png" href="/images/POWER.png" sizes="32X32">
 	<!-- GLOBAL CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap-grid.min.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/header-footer.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/animate.css')}}">
-{{--	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}">--}}
 	<!-- ADD YOUR CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
 	{{-- <link rel="stylesheet" type="text/css" href="{{asset('assets/blog/css/blog.css')}}"> --}}
 </head>
-
 <body>
 	<div class="container-fluid topnav hide">
 		<div class="col-9 col-sm-9 col-md-9 col-lg-9">
