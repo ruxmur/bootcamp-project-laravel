@@ -794,6 +794,9 @@ a:hover {
 div.card.text-center {
     height: 30%;
     width: 30%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 #ftr {
@@ -830,13 +833,14 @@ div.flex {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0 30px;
+    margin-bottom: 40px;
 }
 
 div.main {
     width: 100%;
     height: 50vw;
     position: relative;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.082) 60%, rgba(92, 84, 110, 0.7)), url(../images/main-pic.png);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.082) 60%, rgba(152, 151, 151, 0.7)), url(../images/main-pic.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 10vw 5vw;
@@ -880,4 +884,134 @@ nav.container-fluid.topnav {
     width: 100%;
     height: 100%;
     color: white;
+}
+
+/* positioning the h1 in the div */
+.flex h1 {
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%);
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    z-index: 1
+}
+
+/* the trainer cards alignment */
+.card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+}
+
+/* change the font-size and text color of the h1 in the trainer cards when hovered */
+.card:hover h1 {
+    color: #ffbb01;
+    font-size: 2.5vw;
+    transition: all 0.5s ease-in-out
+}
+
+/* overlay over the image cards when hovered */
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    background: linear-gradient(to bottom, rgba(59, 57, 57, 0.08) 60%, rgba(104, 107, 119, 0.75));
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* hide the details on the trainer cards */
+.hidden {
+    visibility: hidden;
+    transition: all 0.2s ease-in-out !important
+}
+
+/* display the details on the trainer cards when hovered */
+.card:hover .hidden {
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+    background-color: #ffbb01;
+    z-index: 3 !important
+}
+
+.hidden p {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1vw;
+    color: white !important
+}
+
+/* accurately position the icons in the trainer cards when hovered */
+.icon {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.icon i {
+    color: #ffbb01;
+    font-size: 2vw
+}
+
+/* horizontal line */
+.horizontal {
+    width: 15%;
+    height: 1px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #ffbb01;
+    margin-bottom: 10vw !important
+}
+
+.carousel-item-img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item-img img {
+    width: 100%;
+    height: auto;
+}
+
+.card img {
+    vertical-align: middle;
+    height: 600px;
+    border-style: none;
+    width: auto!important;
+    object-fit: cover;
+}
+/** for table in contact us*/
+.row {
+    justify-content:center;
 }
