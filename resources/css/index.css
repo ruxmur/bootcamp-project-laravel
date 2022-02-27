@@ -852,14 +852,6 @@ img.d-block.w-30.mx-auto {
     width: 300px;
 }
 
-/*div.container-fluid.topnav.hide {*/
-/*    width: 70%;*/
-/*}*/
-
-/*div.container-fluid {*/
-/*    padding: 10vw 5vw;*/
-/*}*/
-
 div.row.height-max.image-header.align-items-center {
     background-image: url(//images/jonathan.jpg);
 }
