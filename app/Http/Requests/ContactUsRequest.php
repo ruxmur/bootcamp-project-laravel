@@ -25,7 +25,6 @@ class ContactUsRequest extends FormRequest
             'coach'  => ['required', 'string', Rule::in(['Alex', 'Kevin', 'Lana', 'Mark', 'Rockwell', 'Ruth', 'Tom'])],
             'message' => ['required', 'string', 'min:10'],
 
-            // 'readTerms' => ['required']
         ];
 
     }
