@@ -61,7 +61,7 @@ class ArticleController extends Controller
         $categories = BlogCategory::select('id', 'name')->get();
         $authors = User::select('id', 'name')->has('articles')->get();
 
-        return view('pages.articleCreate', [
+        return view('article.articleCreate', [
             'categories' => $categories,
             'authors' => $authors
         ]);
@@ -73,7 +73,7 @@ class ArticleController extends Controller
         $categories = BlogCategory::select('id', 'name')->get();
         $authors = User::select('id', 'name')->has('articles')->get();
 
-        return view('pages.articleEdit', [
+        return view('article.articleEdit', [
             'article' => [
                 'id' => $article['id'],
                 'title' => $article['title'],

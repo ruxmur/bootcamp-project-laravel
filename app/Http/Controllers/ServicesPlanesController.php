@@ -9,21 +9,9 @@ use App\Services\ModelLogger;
 
 class ServicesPlanesController extends Controller
 {
-    public function showService( Request $request/*, ModelLogger $logger*/)
+    public function showService()
     {
+        return view('home/services');
     }
-
-
-    // public function showService(/*$membershipId,*/ Request $request/*, ModelLogger $logger*/)
-    // {
-    //     $services = Membership::with('name', 'type', 'duration')->get();
-        
-    //     $service = $services::findOrFail($membershipId);
-      
-    //     // $logger->logModel($request->user(), $service); 
-   
-    //     return view('home.services', ['services' => $services]);
-    // }
-    
-
 }
+return redirect()->action([ServicesPlanesController::class, 'showService']);

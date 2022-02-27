@@ -15,20 +15,19 @@ class BlogController extends Controller
     $sort = $request['sort'] ?? 'ASC';
 
     $categories = BlogCategory::all();
-    $category = $request['category'] ?? $categories->first();
+    $category = $request['category'] ?? $categories->first()->id;
 
-    $articles = Article::orderby('created_at', $sort)->paginate(7);
+    $articles = Article::orderby('created_at', $sort)->paginate(6);
     $articles->appends(['sort' => $sort]);
     $comments = Comment::all();
-    
-    // $articles = Article::orderby('created_at', 'DESC')->get()->all();
+
     return view('blog.blog', [
       'articles' => $articles,
       'categories' => $categories,
       'comments' => $comments,
       'filter' => [
         'sort' => $sort,
-        'category' => $category,
+        'category' => (int)$category,
       ]
     ]);
   }
