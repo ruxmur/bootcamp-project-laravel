@@ -8,7 +8,7 @@
                     make your body healthy and strong<br>
                     POWER has got you covered for your victory<br>
                 </p>
-                <button type="button" class="btn btn-danger color px-5"><a href="">Join Us</a></button>
+                <button type="button" class="btn btn-danger color px-5"><a href="{{route('contacts')}}" type="button" ">Join Us</a></button>
             </section>
             <section class="cards">
                 <div class="row wrapper card_s animated  bounceIn">
@@ -25,14 +25,12 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                         <div class="card-body grey">
                             <h5 class="card-title">20% Discount</h5>
-
                             <p class="card-text">We offer monthly discount
                                 for our new customers and
                                 also for members who do
                                 particpate in the weekly
                                 challenge
                             </p>
-
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -54,17 +52,14 @@
                             <p class="card-text">We offer monthly discount
                                 for our customers who buy yearly membership
                             </p>
-
                         </div>
                     </div>
                 </div>
             </section>
-
             <section class="about">
                 <div class="row aboutwrapper">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 about-img">
                     </div>
-
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 about-content">
                         <div class="about-inner">
                             <h1 class="title">About POWER</h1>
@@ -73,16 +68,12 @@
                                 POWER is dedicated to her customers to ensure their fitness and
                                 their strong health. Being fit doesn’t suck, instead it gives one
                                 a stronger lifespan and health.
-
                             </p>
-                            <button type="button" class="btn btn-warning color about-btn"><a href="">Read More</a></button>
+                            <button type="button" class="btn btn-warning color about-btn"><a href="{{route('about')}}">Read More</a></button>
                         </div>
-
                     </div>
-
                 </div>
             </section>
-
             <section class="services-intro">
                 <div class="row services-introwrapper">
                     <div class="col-2 col-sm-2 col-md-2 col-lg-2">
@@ -105,12 +96,10 @@
                     </div>
                 </div>
             </section>
-
             <section class="services">
                 <div class="row serviceswrapper">
                     <div class="col-7 col-sm-6 col-md-6 col-lg-6 services-img">
                     </div>
-
                     <div class="col-5 col-sm-6 col-md-6 col-lg-6 about-content">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
@@ -119,14 +108,10 @@
                             </div>
                             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                             </div>
-
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 row mn">
-
                                 <img src="/images/personal.svg" class=" col-4 col-sm-4 col-md-4 col-lg-4 sev-img ">
                                 <p class="col-2 col-sm-2 col-md-2 col-lg-2 prog">Personal Training
                                 <p>
-
-
                             </div>
                             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                                 <p class="about-text hide">
@@ -134,7 +119,6 @@
                                     personal trainers, who would
                                     properly groom them well for
                                     their fitness
-
                                 </p>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 row mn">
@@ -142,10 +126,7 @@
                                 <img src="/images/group.svg" class="col-4 col-sm-4 col-md-4 col-lg-4 sev-img">
                                 <p class="col-2 col-sm-2 col-md-2 col-lg-2 prog">Group Programs
                                 <p>
-
-
                             </div>
-
                             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                                 <p class="about-text hide">
                                     We also organize group programs
@@ -159,10 +140,7 @@
                                 <img src="/images/person.svg" class="col-4 col-sm-4 col-md-4 col-lg-4 sev-img">
                                 <p class="col-2 col-sm-2 col-md-2 col-lg-2 prog">Online Programs
                                 <p>
-
-
                             </div>
-
                             <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                                 <p class="about-text hide">
                                     We also organize group programs
@@ -172,12 +150,9 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </section>
-
             <section class="Gymclass">
                 <div class="try">
                     <h1 class="title">Gym Classes</h1>
@@ -205,16 +180,11 @@
                             <p class="enroll">Enroll</p>
                         </span>
                     </div>
-
                 </div>
                 </div>
             </section>
-
             <section class="services-intro extra">
-
             </section>
-
-
             <section class="gallery animated bounce">
                 <div class="">
                     <h1 class="title">Our Gallery</h1>
@@ -236,7 +206,6 @@
                 </div>
                 </div>
             </section>
-
             <section id="ftr">
                 <div class="container">
                     <div class="row row-f">
@@ -273,5 +242,4 @@
                 </div>
             </section>
     </main>
-
     @endsection

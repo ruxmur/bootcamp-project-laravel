@@ -1,11 +1,3 @@
-{{-- <h3> comments {{@article->comments()->count()}}</h3>
-    <ul>
-    @foreach($article->comments as $comment)
-     <li>{{@comment->message}}</li>
-    @endforeach
-    </ul> --}}
-
-
 <div class="comments_container">
     {{-- add comment --}}
     <form method="post" action=""> {{-- {{ route('comment.add') }} --}}
@@ -17,14 +9,13 @@
             </label>
             <label for="commentBody">
             </label>
-            <textarea class="form-control add_comments_text" type="text" id="commentBody" placeholder="your comment" name="comment_body"></textarea>
+            <textarea class="form-control add_comments_text"  style="width: 33%;" type="text" id="commentBody" placeholder="your comment" name="comment_body"></textarea>
             <input type="hidden" name="post_id" value="" /> {{-- {{ $post->id }} --}}
         </div>
         <div class="form-group">
             <input type="submit" class="btn btn-dark" value="Add Comment" />
         </div>
     </form>
-
     {{-- display comments --}}
     <div class="display_comments">
         <h4>{{ $article->comments()->count() }} Comments</h4>
@@ -44,7 +35,5 @@
         <div class="row">
             {{-- {{ $comment->links() }} --}}
         </div>
-
-
     </div>
 </div>

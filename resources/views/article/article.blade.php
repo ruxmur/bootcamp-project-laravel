@@ -1,20 +1,7 @@
-{{-- @extends('layout')
-@section('content')
-<article class="blog-post">
-<h1>class="blog-post-title"</h1>
-<img scr="{{$article->image_url}}" alt="{{$article->title}}">
-</article>
-<div>
-@include('article.comments', ['comments'=>@article->comments])
-</div>
-@endsection --}}
-
-
 @extends('layout')
 @section('content')
-    <h1></h1>
-    
     <article class="article">
+        <img src="{{ \Illuminate\Support\Facades\Storage::url($article->image) }}" alt="{{ $article->title }}">
         <div>
             <div class="absolute-bg">
                 <img class="article_image" src="{{ $article->image_url }}" alt="{{$article->exced}}">
@@ -27,12 +14,11 @@
                     <time class="article_time">{{$article->published_at}}</time>
                     <h1 class="article_header"><span>{{$article->title}}</span></h1>
                 </header>
-            
                 <p class="article_text">{{ $article->description }}</p>
                 <div class="article_content-footer">
                     <div class="article_tags">
                         @foreach ($article->tags as $tag )
-                            <span>article tags </span> 
+                            <span>article tags </span>
                             <i class="fas fa-arrow-right"></i>
                             <a href="" class="article_tags-link"> {{ $tag->name}}</a>
                         @endforeach

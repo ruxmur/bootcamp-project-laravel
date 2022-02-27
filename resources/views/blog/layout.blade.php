@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/header-footer.css')}}">
     <!-- ADD YOUR CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/index.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/blog/css/blog.css')}}">
 </head>
 <body>
 <div class="container-fluid topnav hide">

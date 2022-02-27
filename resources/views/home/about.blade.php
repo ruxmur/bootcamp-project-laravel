@@ -82,23 +82,35 @@
                 <div class="col-12 d-flex justify-content-center align-items-center col-lg-6 img-section my-3">
                     <div class="history__">
                         <h1 class="pt-3">About Us</h1>
-                        <h4 class="pb-5">Know More About Our History</h4>
-                        <p>POWER is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Delectus ipsa est ad doloremque temporibus quibusdam eius deleniti,
-                            nostrum minima nam, aspernatur eaque,
-                            iste sed numquam aliquam cum ut ratione accusantium.
+                        <p>POWER is an ultra-modern unisex fitness center with the best amenities
+                            and training equipment. We offer a wide range of classes and exercising programs, tailored
+                            to improve stamina and fitness goals of each gym member, individually and at any level.
                         </p>
                         <p>
-                            POWER is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Dolorem quibusdam perspiciatis temporibus laudantium minima
-                            dolorum commodi maiores quae magnam eius.
-                            Quisquam beatae fugiat illo repudiandae id,
-                            molestiae repellendus officiis aperiam.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Natus iste deleniti corporis maxime excepturi
-                            saepe impedit repudiandae magnam, tempora totam adipisci
-                            deserunt molestiae placeat mollitia?
-                            Eos molestiae odit assumenda fuga?
+                            Trainers at POWER meet the highest standards
+                            expertise in all training programs.
+
+                            We aim to give a system in which everyone is respected and to provide a unique and enjoyable
+                            environment in which everyone can feel comfortable. POWER enables everyone to
+                            work and produce excellence. From the staff to the clients involved in the gym it is all
+                            about working for the greater good.
+                        </p>
+                        <p>
+                            Members at POWER can each select a
+                            trainer, training program and a membership option by choice and personal preferences.
+
+                            You would like to improve your fitness level, to surpass your professional athlete goals, or
+                            you would like either to continue with your recreational fitness routine or start off as a
+                            beginner? This sport facility is the right place for your productive workout and tangible
+                            exercising results. At POWER any form of discrimination, harassment or
+                            prejudice is not tolerated. Here we welcome both male and female members.
+                        </p>
+                        <p>
+                            Find us on the street at 125/3 S.Lincoln St. Washington DC.
+                            Within the premises, you can find the gym, a cross fit gym and a group workout room, locker
+                            rooms, showers and a café. POWER has got its own parking available for 100
+                            cars. We have 24/7 video surveillance, and our members are provided with bar coded ID cards
+                            and free Wi-Fi.
                         </p>
                     </div>
                 </div>
@@ -107,48 +119,6 @@
         </div>
     </section>
     <!-- end of about us section -->
-    <!-- M n V section -->
-    <section class="my-5 m-n-v py-5">
-        <div class="container p-5">
-            <!-- ...section title -->
-            <div class="row">
-                <div class="col d-flex flex-wrap justify-content-center my-5">
-                    <h2 class="font-weight-bolder align-items-center title" style="color: white">
-                        Our Vision & Mission
-                    </h2>
-                </div>
-            </div>
-            <!-- End of section title -->
-            <!-- img row -->
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center col-lg-6 img-section my-3">
-                    <div class="m-info p-5">
-                        <h4>Vision</h4>
-                        <p class="">POWER is Lorem ipsum, dolor
-                            sit amet consectetur adipisicing elit.
-                            Sunt recusandae dolore labore, facere illum velit qui
-                            incidunt culpa asperiores eligendi praesentium expedita
-                            commodi nihil reiciendis quae! A excepturi sit facilis?
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-12 d-flex justify-content-center align-items-center col-lg-6 img-section my-3">
-                    <div class="v-info p-5">
-                        <h4>Mission</h4>
-                        <p class="">POWER is Lorem ipsum, dolor
-                            sit amet consectetur adipisicing elit.
-                            Sunt recusandae dolore labore, facere illum velit qui
-                            incidunt culpa asperiores eligendi praesentium expedita
-                            commodi nihil reiciendis quae! A excepturi sit facilis?
-                        </p>
-                    </div>
-                </div>
-                <!-- end of img row -->
-            </div>
-        </div>
-    </section>
-    <!-- End of M n V section -->
     <!-- choose section -->
     <section class=" my-5">
         <div class="container">
@@ -157,12 +127,9 @@
                 <div class="col-12 d-flex justify-content-center align-items-center col-lg-6 img-section my-3">
                     <div>
                         <h1 class="pt-3">Why Choose Us?</h1>
-                        <h4 class="pb-4">Know about our history</h4>
-                        <p>POWER is Lorem ipsum, dolor
-                            sit amet consectetur adipisicing elit.
-                            Sunt recusandae dolore labore, facere illum velit qui
-                            incidunt culpa asperiores eligendi praesentium expedita
-                            commodi nihil reiciendis quae! A excepturi sit facilis?
+                        <p>POWER is a dynamic and diverse gym with a variety of group classes for every fitness
+                            level and different interests, guided by the trainers who are to answer the gym members
+                            needs at any time.
                         </p>
                     </div>
                 </div>
