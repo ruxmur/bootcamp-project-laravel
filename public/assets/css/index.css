@@ -1014,7 +1014,7 @@ nav.container-fluid.topnav {
     border-style: none;
     width: auto!important;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 /** for table in contact us*/
 .row {
@@ -1106,7 +1106,7 @@ nav.container-fluid.topnav {
 }
 
 #grad1 {
-    background: url("../images/gym3.svg");
+    background: url(/images/gym3.svg?0d24def5ac8dade9af51a987bacb5578);
     background-size: cover;
     height: 0vw;
     background-repeat: no-repeat;
@@ -1659,7 +1659,7 @@ main {
 
 .main-wrapper {
     position: relative;
-    background-image: url(../images/Rectangle32.png);
+    background-image: url(/images/Rectangle32.png?cad190146fff2f992cfc438c1254abcf);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -1862,10 +1862,4 @@ footer {
 .footer-menu a {
     color: rgba(161, 161, 161, 0.8);
 }
-
-
-
-
-
-
 
