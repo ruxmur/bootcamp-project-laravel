@@ -1,8 +1,8 @@
 <section id="popular-articles">
     <h3>Most popular</h3>
     <ul articles-list>
-        <template class="popular-article-template">
-            <li>
+        <template popular-article-template>
+            <li >
                 <div class="card mb-3 position-relative" style="max-width: 540px;">
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                           data-views-counter>

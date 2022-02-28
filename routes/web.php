@@ -28,9 +28,9 @@ Route::get('/blog',[BlogController::class, 'blog'])->name('blog');
 Route::get('/blog/article/create',[ArticleController::class, 'create']);
 Route::get('/blog/article/{id}',[ArticleController::class, 'show'])->name('article');
 Route::get('/blog/article/edit/{articleId}', [ArticleController::class, 'edit']);
-Route::post('/blog/article/{id}',[ArticleController::class, 'show'])->name('article');
+//Route::post('/blog/article/{id}',[ArticleController::class, 'show'])->name('article');
 
-Route::get('/api/articles/most-popular',[ArticleApiController::class, 'readMostPopular']);
+Route::get('/api/articles/most-popular',[ArticleApiController::class, 'readMostPopularArticles']);
 Route::get('/api/articles',[ArticleApiController::class, 'readAll']);
 Route::get('/api/articles/{id}',[ArticleApiController::class, 'readOne']);
 Route::delete('/api/articles/{id}',[ArticleApiController::class, 'deleteArticle']);

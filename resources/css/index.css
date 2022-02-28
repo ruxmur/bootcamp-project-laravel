@@ -713,7 +713,7 @@ a:hover {
     }
 
     .card-title {
-        font: 26px/32px Montserrat;
+        font: 21px/32px Montserrat;
         font-weight: bold;
     }
 
@@ -1803,7 +1803,7 @@ input[type='password'] {
 }
 
 span {
-    font-size: 35px;
+    font-size: 15px;
 }
 
 .a {
@@ -1862,3 +1862,5 @@ footer {
 .footer-menu a {
     color: rgba(161, 161, 161, 0.8);
 }
+
+

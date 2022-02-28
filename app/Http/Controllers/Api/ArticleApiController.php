@@ -35,7 +35,7 @@ class ArticleApiController extends Controller
     {
         $mostPopularArticles = Article::all()
             ->sortByDesc('view_count')
-            ->take($itemCount = 10);
+            ->take($itemCount = 5);
 
         $articlesArray = [];
         foreach ($mostPopularArticles as $article) {
