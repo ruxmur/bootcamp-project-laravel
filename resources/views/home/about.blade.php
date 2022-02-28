@@ -5,7 +5,7 @@
             <div class="row height-max image-header
                 align-items-center" style="background-image: url(/images/jonathan.jpg);">
                 <div class="col-12 h-info d-flex justify-content-center
-                    align-items-center col-lg-6 img-section">
+                    align-items-center col-lg-6 img-section" style="margin-right:900px;">
                     <div class="sub-info ">
                         <h1>What POWER <br> is About</h1>
                         <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.

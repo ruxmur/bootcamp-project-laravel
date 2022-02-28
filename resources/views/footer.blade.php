@@ -56,3 +56,7 @@
 <script src="{{ asset('/assets/js/app.js') }}"></script>
 <script src="{{ asset('/assets/js/most-popular.js') }}"></script>
 
+
+{{--<script src="{{ asset('/assets/vanillajs-datepicker') }}"></script>--}}
+<script src="{{ asset('/assets/js/datepicker.js') }}"></script>
+{{--<script src="/public/assets/vanillajs-datepicker/dist/js/datepicker.js"></script>--}}

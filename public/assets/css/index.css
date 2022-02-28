@@ -313,7 +313,6 @@ a:hover {
     }
 
     .gal-class {
-        position: absolute;
         z-index: 2;
         top: 90%;
         left: 10%;

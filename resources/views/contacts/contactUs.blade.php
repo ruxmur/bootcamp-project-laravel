@@ -17,6 +17,7 @@
         <div class="col-md-3 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
             </h4>
+            <p>Select a date: <input type="text" name="foo"></p>
             <ul class="list-group mb-3">
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                     <div>
@@ -65,12 +66,12 @@
                     {{ session('success') }}
                 </div>
             @endif
-            <form action="{{ route('contactUs.send') }}" method="POST" name="contact-form" class="card p-2">
+            <form action="{{ route('contactUs.send') }}" style="height: 300px;" method="POST" name="contact-form" class="card p-2">
                 <div class="input-group">
                     <input name="promoCode" type="text" value="{{ old('promo code') }}" class="form-control "
                            placeholder="Promo code">
                     <div class="input-group-append">
-                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                        <button type="submit" class="btn btn-secondary" style="margin-top: 0.5vw">Redeem</button>
                     </div>
                 </div>
             </form>

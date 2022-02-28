@@ -190,15 +190,15 @@
                     <h1 class="title">Our Gallery</h1>
                 </div>
                 <div class="row gallerywrapper">
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 size">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 size text-center">
                         <img src="/images/gallery1.jpg" class="gallery-img">
                         <p class="gal-class">Cycle Fit</p>
                     </div>
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 size">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 size text-center">
                         <img src="/images/gallery2.svg" class="gallery-img">
-                        <p class="gal-class">Gym Centre</p>
+                        <p class="gal-class" style="margin-left: 35px;">Gym Centre</p>
                     </div>
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 size">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 size text-center">
                         <img src="/images/gallery3.jpg" class="gallery-img">
                         <p class="gal-class">Fight Fit</p>
                     </div>

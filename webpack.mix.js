@@ -19,4 +19,6 @@ mix.js('resources/js/app.js', 'public/assets/js')
 
 mix.js('resources/blog/js/blog.js', 'public/assets/js')
     .js('resources/blog/js/most-popular.js', 'public/assets/js')
+    .js('resources/blog/js/datepicker.js', 'public/assets/js')
+    .sass('resources/sass/datepicker/main.scss', 'public/css')
     .postCss('resources/blog/css/blog.css', 'public/assets/css');

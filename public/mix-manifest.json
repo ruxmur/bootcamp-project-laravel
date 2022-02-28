@@ -2,7 +2,9 @@
     "/assets/js/app.js": "/assets/js/app.js",
     "/assets/js/blog.js": "/assets/js/blog.js",
     "/assets/js/most-popular.js": "/assets/js/most-popular.js",
+    "/assets/js/datepicker.js": "/assets/js/datepicker.js",
     "/assets/css/blog.css": "/assets/css/blog.css",
     "/assets/css/app.css": "/assets/css/app.css",
-    "/assets/css/index.css": "/assets/css/index.css"
+    "/assets/css/index.css": "/assets/css/index.css",
+    "/css/main.css": "/css/main.css"
 }

@@ -19307,6 +19307,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/sass/datepicker/main.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/datepicker/main.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/index.css":
 /*!*********************************!*\
   !*** ./resources/css/index.css ***!
@@ -19664,7 +19677,8 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","/var/www"]],"_developmen
 /******/ 			"/assets/js/app": 0,
 /******/ 			"assets/css/blog": 0,
 /******/ 			"assets/css/app": 0,
-/******/ 			"assets/css/index": 0
+/******/ 			"assets/css/index": 0,
+/******/ 			"css/main": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19714,10 +19728,11 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","/var/www"]],"_developmen
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index"], () => (__webpack_require__("./resources/css/index.css")))
-/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index"], () => (__webpack_require__("./resources/blog/css/blog.css")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index","css/main"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index","css/main"], () => (__webpack_require__("./resources/sass/datepicker/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index","css/main"], () => (__webpack_require__("./resources/css/index.css")))
+/******/ 	__webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index","css/main"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["assets/css/blog","assets/css/app","assets/css/index","css/main"], () => (__webpack_require__("./resources/blog/css/blog.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
